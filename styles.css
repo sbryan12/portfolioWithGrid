@@ -4,6 +4,9 @@ body {
     margin: 0;
 }
 
+h1, h2, h3 {
+    color: lightblue
+}
 .navbar {
     display: flex;
     background-color: #f0f0f0;
@@ -110,11 +113,9 @@ h3 {
     padding-top: 20px;
 }
 #projects {
-    color: white;
     padding-left: 20px;
 }
 .testimonial h1 {
-    color: white;
     padding-left: 20px;
 }
 

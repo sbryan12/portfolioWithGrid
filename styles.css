@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #252E40;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -5,26 +8,31 @@ body {
 }
 
 h1, h2, h3 {
-    color: lightblue
+    color: #f2f2f2;
 }
 .navbar {
     display: flex;
-    background-color: #f0f0f0;
+    background-color: #95A3BF;
     padding: 10px;
     justify-content: space-between;
 }
 .navbar a {
-    color: black;
+    color: #0D1B1D;
     text-decoration: none;
 }
 .navbar a:hover {
-    background-color: lightblue;
+    background-color: #7E858E;
 }
-
+.section {
+    margin-bottom: 40px;
+}
 .section {
     display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 1200px;
 }
 .section img {
     width: 200px;
@@ -56,16 +64,21 @@ h1, h2, h3 {
     flex-direction: column;
     margin-left: 20px;
     margin-top: 20px;
+    text-align: justify;
+    line-height: 1.6;
 }
 h3 {
     color: white;
 }
 .about-me-text h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .solid {
     border-top: 3px solid #e9e0e0;
+    margin: 40px auto;
+    max-width: 1400px;
 }
 .education-and-experience {
     display: flex;
@@ -73,39 +86,54 @@ h3 {
     padding: 40px 20px;
     gap: 40px;
     color: white;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .edu-and-exp-section h1 {
-    margin-left: -20px;
+    margin-left: 0px;
+    margin-bottom: 15px;
 }
 .edu-and-exp-section p {
-    margin-left: -20px;
+    margin-left: 0px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.edu-and-exp-section ul {
+    line-height: 1.6;
+    margin-left: 20px;
+}
+.edu-and-exp-section li {
+    margin-bottom: 8px;
 }
 .edu-and-exp-section {
     flex: 1;
     padding: 20px;
     border-radius: 5px;
+    text-align: left;
 }
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 5%;
   box-sizing: border-box;
   gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .box {
-    width: 30%;
-    height: 400px;
+    width: calc(33.3333% - 20px);
+    min-height: 500px;
     border-radius: 12px;
     text-align: center;
     box-sizing: border-box;
     color: white;
-    margin: 1%;
-    background-color: #1a1a1a;
+    margin: 0;
+    background-color: #0D1B1D;
 }
 .box a:hover {
-    background-color: lightblue;
-    color: black;
+    background-color: #7E858E;
+    color: #f2f2f2;
 }
 .box img {
     width: 75%;
@@ -114,21 +142,49 @@ h3 {
 }
 #projects {
     padding-left: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
-.testimonial h1 {
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.blog-pic {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background-color: #0D1B1D;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+.blog-pic img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.blog-text {
+    flex: 1;
+    color: white;
+}
+#testimonial {
     padding-left: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.testimonial-text {
-    color: white;
-    padding-left: 20px;
-}
 .contact {
     color: white;
 }
 #contact {
     margin-bottom: 20px;
     padding-left: 20px;
+    max-width: 1400px;
+    margin: 0 auto 20px;
 }
 
 .box a {
@@ -143,9 +199,9 @@ h3 {
     height: auto;
 }
 .contact .container {
-    padding: 0;
+    padding: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .contact-logos {
    display: flex;
@@ -168,13 +224,15 @@ h3 {
 .contact-box {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 5%;
-    gap: 20px;
-    background-color: #1a1a1a;
+    padding: 40px 5%;
+    gap: 30px;
+    background-color: #0D1B1D;
     border-radius: 12px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;
     padding-left: 0;
@@ -186,7 +244,7 @@ h3 {
     display: block;
 }
 .contact-box a:hover{
-    background-color: lightblue;
+    background-color: #7E858E;
 }
 #copyright {
     text-align: center;
@@ -221,7 +279,7 @@ main {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: #1a1a1a;
+    background-color: #0D1B1D;
     padding: 20px;
     color: white;
     border-radius: 12px;
@@ -247,7 +305,7 @@ main {
 .sidebar h2 {
     margin-top: 0;
     font-size: 30px;
-    color: lightblue;
+    color: #95A3BF;
     overflow-y: auto;
     position: sticky;
 }
@@ -273,5 +331,90 @@ main {
     }
     .sidebar {
         display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    .section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .section img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .headshot-wrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-me-text {
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .education-and-experience {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .edu-and-exp-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .blog-pic {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .blog-pic img{
+       width: 100%;
+       height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .box {
+        width: 100%;
+        margin: 10px 0;
+        min-height: auto;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .contact-logos{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-logos .column {
+        width: 100%;
     }
 }
